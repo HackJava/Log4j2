@@ -114,9 +114,12 @@
 - https://mp.weixin.qq.com/s/AWhV-QdkQ6i2IEZSVhe-Kg
 - https://mp.weixin.qq.com/s/iHqwL6jslyCV_0jtdVj82A
 - https://github.com/zhangyoufu/log4j2-without-jndi
+- https://lorexxar.cn/2021/12/10/log4j2-jndi
+- https://www.t00ls.cc/thread-63705-1-1.html
 
 ## 07-Log4j靶场环境
 
 - https://hub.docker.com/u/vulfocus
 - https://github.com/jweny/log4j-web-env
 - https://github.com/fengxuangit/log4j_vuln
+- https://www.t00ls.cc/thread-63695-1-1.html
