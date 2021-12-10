@@ -2,12 +2,13 @@
 
 本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月10日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
-- [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#%E4%B8%80Log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
-- [02-Log4j漏洞汇总](https://github.com/0e0w/HackLog4j#%E4%BA%8CLog4j%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
-- [03-Log4j框架识别](https://github.com/0e0w/HackLog4j#%E4%B8%89Log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
-- [04-Log4j漏洞检测](https://github.com/0e0w/HackLog4j#%E5%9B%9BLog4j%E6%BC%8F%E6%B4%9E%E6%A3%80%E6%B5%8B)
-- [05-Log4j漏洞利用](https://github.com/0e0w/HackLog4j#%E4%BA%94Log4j%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8)
-- [06-Log4j靶场环境](https://github.com/0e0w/HackLog4j#%E5%85%ADLog4j%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
+- [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+- [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
+- [03-Log4j上层建筑](https://github.com/0e0w/HackLog4j#03-log4j%E4%B8%8A%E5%B1%82%E5%BB%BA%E7%AD%91)
+- [04-Log4j漏洞汇总](https://github.com/0e0w/HackLog4j#04-log4j%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
+- [05-Log4j漏洞利用](https://github.com/0e0w/HackLog4j#05-log4j%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8)
+- [06-Log4j分析文章](https://github.com/0e0w/HackLog4j#06-log4j%E5%88%86%E6%9E%90%E6%96%87%E7%AB%A0)
+- [07-Log4j靶场环境](https://github.com/0e0w/HackLog4j#07-log4j%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
 
 ## 01-Log4j基础知识
 - https://github.com/apache/logging-log4j2
@@ -36,9 +37,9 @@
 
 ## 04-Log4j漏洞汇总
 
-- CVE-2017-5645
+- CVE-2021-44228
 - CVE-2019-17571
-- **CVE-2021-44228**
+- CVE-2017-5645
 
 ## 05-Log4j漏洞利用
 
@@ -111,8 +112,10 @@
 - https://mp.weixin.qq.com/s/nOmQFq4KxM9AZ_HYIq1_CQ
 - https://mp.weixin.qq.com/s/K74c1pTG6m5rKFuKaIYmPg
 - https://mp.weixin.qq.com/s/AWhV-QdkQ6i2IEZSVhe-Kg
+- https://mp.weixin.qq.com/s/iHqwL6jslyCV_0jtdVj82A
 
 ## 07-Log4j靶场环境
 
+- https://hub.docker.com/u/vulfocus
 - https://github.com/jweny/log4j-web-env
 - https://github.com/fengxuangit/log4j_vuln
