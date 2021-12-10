@@ -113,6 +113,7 @@
 - https://mp.weixin.qq.com/s/K74c1pTG6m5rKFuKaIYmPg
 - https://mp.weixin.qq.com/s/AWhV-QdkQ6i2IEZSVhe-Kg
 - https://mp.weixin.qq.com/s/iHqwL6jslyCV_0jtdVj82A
+- https://github.com/zhangyoufu/log4j2-without-jndi
 
 ## 07-Log4j靶场环境
 
