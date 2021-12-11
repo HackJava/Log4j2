@@ -33,6 +33,8 @@
 - Spring-Boot-strater-log4j2
 - 我的世界（Minecraft）
 - ......
+- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core/usages
+- https://github.com/YfryTchsGD/Log4jAttackSurface
 - https://github.com/CrackerCat/Log4jAttackSurface
 
 ## 04-Log4j漏洞汇总
@@ -50,7 +52,6 @@
 - https://github.com/simonis/Log4jPatch
 - https://github.com/Szczurowsky/Log4j-0Day-Fix
 - https://github.com/Anonymous-ghost/log4jVul
-- https://github.com/YfryTchsGD/Log4jAttackSurface
 - https://github.com/SumoLogic/sumologic-log4j2-appender
 - https://github.com/chaitin/log4j2-vaccine
 - https://github.com/ilsubyeega/log4j2-exploits
@@ -112,6 +113,9 @@
 - https://github.com/numanturle/Log4jNuclei
 - https://github.com/tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce
 - https://github.com/kozmer/log4j-shell-poc
+- https://github.com/hackerhackrat/Log4j2-RCE-burp-plugin
+- https://github.com/test502git/log4j-fuzz-head-poc
+- https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
 
 ## 06-Log4j分析文章
 
@@ -123,6 +127,7 @@
 - https://mp.weixin.qq.com/s/iHqwL6jslyCV_0jtdVj82A
 - https://lorexxar.cn/2021/12/10/log4j2-jndi
 - https://www.t00ls.cc/thread-63705-1-1.html
+- https://mp.weixin.qq.com/s/vAE89A5wKrc-YnvTr0qaNg
 
 ## 07-Log4j靶场环境
 
