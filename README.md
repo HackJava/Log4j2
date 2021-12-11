@@ -1,6 +1,6 @@
 # HackLog4j
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月10日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月11日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
@@ -104,6 +104,14 @@
 - https://github.com/Al0sc/Log4j-rce
 - https://github.com/ven0n1/Log4jv2Maven
 - https://github.com/akunzai/log4j2-sendgrid-appender
+- https://github.com/inbug-team/Log4j_RCE_Tool
+- https://github.com/zlepper/CVE-2021-44228-Test-Server
+- https://github.com/webraybtl/Log4j
+- https://github.com/f0ng/log4jscanner
+- https://github.com/guguyu1/log4j2_burp_scan
+- https://github.com/numanturle/Log4jNuclei
+- https://github.com/tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce
+- https://github.com/kozmer/log4j-shell-poc
 
 ## 06-Log4j分析文章
 
@@ -113,7 +121,6 @@
 - https://mp.weixin.qq.com/s/K74c1pTG6m5rKFuKaIYmPg
 - https://mp.weixin.qq.com/s/AWhV-QdkQ6i2IEZSVhe-Kg
 - https://mp.weixin.qq.com/s/iHqwL6jslyCV_0jtdVj82A
-- https://github.com/zhangyoufu/log4j2-without-jndi
 - https://lorexxar.cn/2021/12/10/log4j2-jndi
 - https://www.t00ls.cc/thread-63705-1-1.html
 
@@ -123,3 +130,4 @@
 - https://github.com/jweny/log4j-web-env
 - https://github.com/fengxuangit/log4j_vuln
 - https://www.t00ls.cc/thread-63695-1-1.html
+- https://github.com/christophetd/log4shell-vulnerable-app
