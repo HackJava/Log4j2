@@ -1,6 +1,6 @@
 # HackLog4j
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月14日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月15日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
@@ -132,6 +132,10 @@
 - https://github.com/zhzyker/logmap
 - https://github.com/LoRexxar/log_dependency_checklist
 - https://github.com/0xDexter0us/Log4J-Scanner
+- https://github.com/0xInfection/LogMePwn
+- https://github.com/cckuailong/Log4j_CVE-2021-45046
+- https://github.com/KpLi0rn/Log4j2Scan
+- https://github.com/righel/log4shell_nse
 
 九、Payload
 
