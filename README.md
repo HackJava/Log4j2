@@ -1,6 +1,6 @@
 # HackLog4j
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月15日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月16日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
@@ -35,6 +35,7 @@
 - Spring-Boot-strater-log4j2
 - 我的世界（Minecraft）
 - ......
+- https://github.com/cisagov/log4j-affected-db
 - https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core/usages
 - https://github.com/YfryTchsGD/Log4jAttackSurface
 - https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
@@ -177,3 +178,4 @@
 - https://github.com/fengxuangit/log4j_vuln
 - https://www.t00ls.cc/thread-63695-1-1.html
 - https://github.com/christophetd/log4shell-vulnerable-app
+- https://github.com/Adikso/minecraft-log4j-honeypot
