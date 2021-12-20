@@ -127,6 +127,7 @@ ${log4j:ldap://127.0.0.1/poc}
 
 - https://github.com/For-ACGN/Log4Shell
 - https://github.com/proferosec/log4jScanner
+- https://github.com/j5s/Log4j2Scan
 
 五、主动扫描
 
@@ -145,9 +146,14 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/bit4woo/log4jScan
 - https://github.com/izj007/Log4j2Scan
 
-七、其他工具
+七、Host头检测
 
-- https://github.com/DichuuCraft/LOG4J2-3201-fix
+- https://github.com/0xInfection/LogMePwn
+
+八、请求参数检测
+
+九、其他工具
+
 - https://github.com/dbgee/log4j2_rce
 - https://github.com/ReadER-L/log4j-rce
 - https://github.com/HyCraftHD/Log4J-RCE-Proof-Of-Concept
@@ -200,7 +206,6 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/zhzyker/logmap
 - https://github.com/LoRexxar/log_dependency_checklist
 - https://github.com/0xDexter0us/Log4J-Scanner
-- https://github.com/0xInfection/LogMePwn
 - https://github.com/cckuailong/Log4j_CVE-2021-45046
 - https://github.com/KpLi0rn/Log4j2Scan
 - https://github.com/righel/log4shell_nse
@@ -233,6 +238,7 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/zhangyoufu/log4j2-without-jndi
 - https://github.com/CreeperHost/Log4jPatcher
 - https://github.com/boundaryx/cloudrasp-log4j2
+- https://github.com/DichuuCraft/LOG4J2-3201-fix
 - https://github.com/DichuuCraft/LOG4J2-3201-fix
 
 ## 07-Log4j分析文章
