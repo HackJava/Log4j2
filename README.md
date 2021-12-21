@@ -270,3 +270,5 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/EmYiQing/Log4j2DoS
 - https://github.com/tothi/log4shell-vulnerable-app
 - https://github.com/Anonymous-ghost/log4jVul
+
+[![Stargazers over time](https://starchart.cc//0e0w/HackLog4j.svg)](https://starchart.cc/0e0w/HackLog4j)
