@@ -1,6 +1,6 @@
 # HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月20日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月21日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
@@ -117,6 +117,7 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/Neo23x0/log4shell-detector
 - https://github.com/dwisiswant0/look4jar
 - https://github.com/Qualys/log4jscanwin
+- https://github.com/lijiejie/log4j2_vul_local_scanner
 
 三、出网检测
 
@@ -128,6 +129,7 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/For-ACGN/Log4Shell
 - https://github.com/proferosec/log4jScanner
 - https://github.com/j5s/Log4j2Scan
+- https://github.com/Y0-kan/Log4jShell-Scan
 
 五、主动扫描
 
