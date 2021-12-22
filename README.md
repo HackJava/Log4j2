@@ -1,9 +1,10 @@
 # HackLog4j-永恒之恶龙
 
-**Log4j影响实在太大了，本人开始写专项漏洞检测工具。Star超过200发布！！！感谢关注。**
+**Log4j影响实在太大了，本人开始写专项漏洞检测工具-永恒之恶龙。Star超过200[发布](https://github.com/Goqi/ELong)！欢迎关注，感谢小星星！**
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月21日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月22日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
+- [00-Log4j永恒恶龙]()
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
 - [03-Log4j上层建筑](https://github.com/0e0w/HackLog4j#03-log4j%E4%B8%8A%E5%B1%82%E5%BB%BA%E7%AD%91)
@@ -13,7 +14,12 @@
 - [07-Log4j分析文章](https://github.com/0e0w/HackLog4j#07-log4j%E5%88%86%E6%9E%90%E6%96%87%E7%AB%A0)
 - [08-Log4j靶场环境](https://github.com/0e0w/HackLog4j#08-log4j%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
 
+## 00-Log4j永恒恶龙
+
+- https://github.com/Goqi/ELong Star超过200发布！欢迎关注，感谢小星星！
+
 ## 01-Log4j基础知识
+
 - https://github.com/apache/logging-log4j2
 
 ## 02-Log4j框架识别
