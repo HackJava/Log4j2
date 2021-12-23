@@ -2,9 +2,9 @@
 
 **Log4j影响实在太大了，本人开始写专项漏洞检测工具-永恒之恶龙。Star超过200[发布](https://github.com/Goqi/ELong)！欢迎关注，感谢小星星！**
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月22日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月23日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
-- [00-Log4j永恒恶龙]()
+- [00-Log4j永恒恶龙](https://github.com/0e0w/HackLog4j#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
 - [03-Log4j上层建筑](https://github.com/0e0w/HackLog4j#03-log4j%E4%B8%8A%E5%B1%82%E5%BB%BA%E7%AD%91)
@@ -37,6 +37,7 @@
 - [x] Apache Solr
 - [ ] Apache Dubbo
 - [ ] Apache Druid
+- [ ] Apache OFBiz
 - [ ] flume
 - [ ] Redis
 - [ ] logstash
@@ -132,13 +133,15 @@ ${log4j:ldap://127.0.0.1/poc}
 
 - https://github.com/dorkerdevil/Log-4-JAM
 - https://github.com/adilsoybali/Log4j-RCE-Scanner
+- https://github.com/cisagov/log4j-scanner
 
 四、不出网检测
 
 - https://github.com/For-ACGN/Log4Shell
 - https://github.com/proferosec/log4jScanner
-- https://github.com/j5s/Log4j2Scan
 - https://github.com/Y0-kan/Log4jShell-Scan
+- https://github.com/j5s/Log4j2Scan
+- https://github.com/EmYiQing/JNDIScan
 
 五、主动扫描
 
@@ -156,6 +159,7 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/pmiaowu/log4j2Scan
 - https://github.com/bit4woo/log4jScan
 - https://github.com/izj007/Log4j2Scan
+- https://github.com/gh0stkey/Log4j2-RCE-Scanner
 
 七、Host头检测
 
