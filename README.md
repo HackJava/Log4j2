@@ -181,6 +181,7 @@ ${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
 - https://github.com/izj007/Log4j2Scan
 - https://github.com/gh0stkey/Log4j2-RCE-Scanner
 - https://github.com/p1n93r/Log4j2Scan
+- https://github.com/mostwantedduck/BurpLog4j2Scan
 
 七、Header检测
 
