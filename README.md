@@ -2,7 +2,7 @@
 
 **Log4j影响实在太大了，本人开始写专项漏洞检测工具-永恒之恶龙。Star超过200[发布](https://github.com/Goqi/ELong)！欢迎关注，感谢小星星！**
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月28日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2021年12月29日。作者：[0e0w](https://github.com/0e0w/HackLog4j)
 
 - [00-Log4j永恒恶龙](https://github.com/0e0w/HackLog4j#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
@@ -304,5 +304,7 @@ ${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
 - https://github.com/EmYiQing/Log4j2DoS
 - https://github.com/tothi/log4shell-vulnerable-app
 - https://github.com/Anonymous-ghost/log4jVul
+
+![](TEMP/WX.png)
 
 [![Stargazers over time](https://starchart.cc//0e0w/HackLog4j.svg)](https://starchart.cc/0e0w/HackLog4j)
