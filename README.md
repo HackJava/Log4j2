@@ -56,6 +56,8 @@
 - https://github.com/CrackerCat/Log4jAttackSurface
 - https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core/usages
 - https://security.googleblog.com/2021/12/understanding-impact-of-apache-log4j.html
+- https://github.com/authomize/log4j-log4shell-affected
+- https://github.com/NS-Sp4ce/Vm4J
 
 ## 04-Log4j漏洞汇总
 
@@ -182,6 +184,7 @@ ${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
 - https://github.com/gh0stkey/Log4j2-RCE-Scanner
 - https://github.com/p1n93r/Log4j2Scan
 - https://github.com/mostwantedduck/BurpLog4j2Scan
+- https://github.com/j3ers3/Log4Scan
 
 七、Header检测
 
@@ -264,6 +267,7 @@ ${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
 - https://github.com/lcosmos/apache-log4j-poc
 - https://github.com/dbgee/CVE-2021-44228
 - https://github.com/lcosmos/apache-log4j-poc
+- https://github.com/aalex954/Log4PowerShell
 
 ## 06-Log4j漏洞修复
 
