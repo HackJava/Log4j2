@@ -1,6 +1,6 @@
 # HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年1月7日。
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年1月8日。
 
 - [00-Log4j永恒恶龙](https://github.com/0e0w/HackLog4j#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
 - [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
@@ -167,6 +167,7 @@ ${${::::::::::::::-j}ndi:rmi://127.0.0.1/poc}
 - https://www.t00ls.cc/thread-63931-1-1.html
 - https://github.com/darkarnium/Log4j-CVE-Detect
 - https://github.com/whitesource/log4j-detect-distribution
+- https://github.com/fox-it/log4j-finder
 
 三、出网检测
 
