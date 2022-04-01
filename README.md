@@ -1,16 +1,16 @@
 # HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年2月28日。
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年4月1日。作者：[0e0w](https://github.com/0e0w)
 
-- [00-Log4j永恒恶龙](https://github.com/0e0w/HackLog4j#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
-- [01-Log4j基础知识](https://github.com/0e0w/HackLog4j#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
-- [02-Log4j框架识别](https://github.com/0e0w/HackLog4j#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
-- [03-Log4j上层建筑](https://github.com/0e0w/HackLog4j#03-log4j%E4%B8%8A%E5%B1%82%E5%BB%BA%E7%AD%91)
-- [04-Log4j漏洞汇总](https://github.com/0e0w/HackLog4j#04-log4j%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
-- [05-Log4j检测利用](https://github.com/0e0w/HackLog4j#05-log4j%E6%A3%80%E6%B5%8B%E5%88%A9%E7%94%A8)
-- [06-Log4j漏洞修复](https://github.com/0e0w/HackLog4j#06-log4j%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D)
-- [07-Log4j分析文章](https://github.com/0e0w/HackLog4j#07-log4j%E5%88%86%E6%9E%90%E6%96%87%E7%AB%A0)
-- [08-Log4j靶场环境](https://github.com/0e0w/HackLog4j#08-log4j%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
+- [00-Log4j永恒恶龙](https://github.com/HackJava/HackLog4j2#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
+- [01-Log4j基础知识](https://github.com/HackJava/HackLog4j2#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+- [02-Log4j框架识别](https://github.com/HackJava/HackLog4j2#02-log4j%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
+- [03-Log4j上层建筑](https://github.com/HackJava/HackLog4j2#03-log4j%E4%B8%8A%E5%B1%82%E5%BB%BA%E7%AD%91)
+- [04-Log4j漏洞汇总](https://github.com/HackJava/HackLog4j2#04-log4j%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
+- [05-Log4j检测利用](https://github.com/HackJava/HackLog4j2#05-log4j%E6%A3%80%E6%B5%8B%E5%88%A9%E7%94%A8)
+- [06-Log4j漏洞修复](https://github.com/HackJava/HackLog4j2#06-log4j%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D)
+- [07-Log4j分析文章](https://github.com/HackJava/HackLog4j2#07-log4j%E5%88%86%E6%9E%90%E6%96%87%E7%AB%A0)
+- [08-Log4j靶场环境](https://github.com/HackJava/HackLog4j2#08-log4j%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
 
 ## 00-Log4j永恒恶龙
 
@@ -170,6 +170,7 @@ ${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://127.0.0.1/poc}
 - https://github.com/darkarnium/Log4j-CVE-Detect
 - https://github.com/whitesource/log4j-detect-distribution
 - https://github.com/fox-it/log4j-finder
+- https://github.com/webraybtl/Log4j
 
 三、出网检测
 
