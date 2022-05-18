@@ -1,6 +1,6 @@
 # HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年4月1日。作者：[0e0w](https://github.com/0e0w)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年5月17日。作者：[0e0w](https://github.com/0e0w)
 
 - [00-Log4j永恒恶龙](https://github.com/HackJava/HackLog4j2#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
 - [01-Log4j基础知识](https://github.com/HackJava/HackLog4j2#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
@@ -190,6 +190,7 @@ ${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://127.0.0.1/poc}
 
 - https://github.com/ilsubyeega/log4j2-exploits
 - https://github.com/Cyronlee/log4j-rce
+- https://github.com/handbye/Log4j2Fuzz
 
 六、被动扫描
 
