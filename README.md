@@ -1,6 +1,6 @@
 # HackLog4j-永恒之恶龙
 
-本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年5月24日。作者：[0e0w](https://github.com/0e0w)
+本项目用来致敬全宇宙最无敌的Java日志库！同时也记录自己在学习Log4j漏洞过程中遇到的一些内容。本项目会持续更新，本项目创建于2021年12月10日，最近的一次更新时间为2022年12月27日。作者：[0e0w](https://github.com/0e0w)
 
 - [00-Log4j永恒恶龙](https://github.com/HackJava/HackLog4j2#00-log4j%E6%B0%B8%E6%81%92%E6%81%B6%E9%BE%99)
 - [01-Log4j基础知识](https://github.com/HackJava/HackLog4j2#01-log4j%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
@@ -46,6 +46,7 @@
 - [ ] Spring-Boot-strater-log4j2
 - [ ] VMware vCenter
 - [ ] Minecraft
+- [x] hikvision
 - ......
 - https://fofa.so/static_pages/log4j2
 - https://github.com/cisagov/log4j-affected-db
@@ -56,6 +57,7 @@
 - https://security.googleblog.com/2021/12/understanding-impact-of-apache-log4j.html
 - https://github.com/authomize/log4j-log4shell-affected
 - https://github.com/NS-Sp4ce/Vm4J
+- https://github.com/dinosn/hikvision
 
 ## 04-Log4j漏洞汇总
 
